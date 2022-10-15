@@ -1,5 +1,6 @@
 package com.github.juceduarte;
 
+import com.github.juceduarte.facade.FirstFacade;
 import com.github.juceduarte.singleton.SingletonFirst;
 import com.github.juceduarte.singleton.SingletonSecond;
 import com.github.juceduarte.singleton.SingletonThird;
@@ -42,5 +43,9 @@ public class Test {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        //Facade
+        FirstFacade facade = new FirstFacade();
+        facade.migrarCliente("Juce Duarte", "55750000");
     }
 }
